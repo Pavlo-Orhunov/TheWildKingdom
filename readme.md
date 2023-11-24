@@ -21,10 +21,10 @@ _(will open in the same window)_
 
 **_Preview for desktop (1920px) layout version:_** ⬇️
 
-![Desktop version preview](https://github.com/Pavlo-Orhunov/Home-Services/blob/master/images/desktop.jpg "Desktop version preview")
+![Desktop version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/desktop.jpg "Desktop version preview")
 
 <br>
 
 **_Preview for mobile (360px) layout version:_** ⬇️
 
-![Mobile version preview](https://github.com/Pavlo-Orhunov/Home-Services/blob/master/images/mobile.jpg "Mobile version preview")
+![Mobile version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/mobile.jpg "Mobile version preview")
