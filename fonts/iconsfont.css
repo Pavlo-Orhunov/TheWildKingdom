@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.ttf?7ebgxg") format("truetype"),
+    url("../fonts/icons.woff?7ebgxg") format("woff"),
+    url("../fonts/icons.svg?7ebgxg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-login:before {
+  content: "\e90a";
+}
+._icon-star:before {
+  content: "\e900";
+}
+._icon-star-fill:before {
+  content: "\e901";
+}
+._icon-geolocation:before {
+  content: "\e902";
+}
+._icon-clock:before {
+  content: "\e903";
+}
+._icon-quotes:before {
+  content: "\e904";
+}
+._icon-medium:before {
+  content: "\e905";
+}
+._icon-imstagram:before {
+  content: "\e906";
+}
+._icon-tik-tok:before {
+  content: "\e907";
+}
+._icon-twitter:before {
+  content: "\e908";
+}
+._icon-arrow:before {
+  content: "\e909";
+}

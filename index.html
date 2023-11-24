@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wild Kingdom</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__container">
+            <div class="header__inner">
+              <nav class="header__menu menu">
+                <div class="menu__body">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a data-goto=".hero" href="#" class="menu__link u-hover"
+                        >Home
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a data-goto=".about" href="#" class="menu__link u-hover"
+                        >About</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        data-goto=".products"
+                        href="#"
+                        class="menu__link u-hover"
+                        >Products</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        data-goto=".services"
+                        href="#"
+                        class="menu__link u-hover"
+                        >Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="header__logo">
+                <img src="images/header/logo.svg" alt="logo" />
+              </div>
+              <div class="header__actions">
+                <a href="#" class="header__action u-hover _icon-login">
+                  <span>Log in</span>
+                </a>
+                <a href="#" class="header__action u-hover">Register</a>
+                <a href="#" class="header__action button">Contact</a>
+              </div>
+              <button class="icon-menu" type="button">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__container">
+            <div class="hero__body">
+              <div class="hero__content">
+                <h1 class="hero__title">A better world for pets</h1>
+                <a href="#" class="hero__button button">Explore</a>
+              </div>
+              <div class="hero__slider">
+                <div class="swiper main-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-1.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-2.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-3.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-4.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper thumbs-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-1.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-2.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-3.png" alt="image" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/hero/slider/0-4.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__arrows">
+                <button
+                  type="button"
+                  class="hero__arrow-prev _icon-arrow"
+                ></button>
+                <button
+                  type="button"
+                  class="hero__arrow-next _icon-arrow"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__about about">
+          <div class="about__container">
+            <div class="about__body">
+              <div class="about__image">
+                <img src="images/about/image.jpg" alt="terrier dog" />
+              </div>
+              <div class="about__content content-about">
+                <p class="content-about__label">About us</p>
+                <h2 class="content-about__title title">
+                  Treating pet like Royalty
+                </h2>
+                <blockquote class="content-about__citation">
+                  “They’re not just pets, they’re family”
+                </blockquote>
+                <p class="content-about__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  aliquam mi id augue ultrices, in tempus elit tristique.
+                  Aliquam ultrices sem non.
+                </p>
+                <a href="#" class="content-about__button button button-gold"
+                  >Explore</a
+                >
+              </div>
+            </div>
+            <ul class="about__items">
+              <li class="about__item">
+                <div class="about__icon">
+                  <img src="images/about/food.png" alt="food-icon" />
+                </div>
+                <p class="about__label">Pet food</p>
+              </li>
+              <li class="about__item">
+                <div class="about__icon">
+                  <img src="images/about/care.png" alt="care-icon " />
+                </div>
+                <p class="about__label">Pet care</p>
+              </li>
+              <li class="about__item">
+                <div class="about__icon">
+                  <img
+                    src="images/about/accessories.png"
+                    alt="accessories-icon"
+                  />
+                </div>
+                <p class="about__label">pet accessories</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page__products products">
+          <div class="products__container">
+            <div class="products__heading">
+              <p class="products__label">Our Products</p>
+              <h2 class="products__title title">For all your pet needs</h2>
+              <p class="products__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                aliquam mi id augue ultrices, in tempus elit.
+              </p>
+            </div>
+            <div class="products__cards">
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/01.jpg" alt="Luxury pet bed"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>Luxury pet bed</h3></a
+                    >
+                    <div class="item-product__price">$120</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/02.jpg" alt="Cat Food"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"><h3>Cat Food</h3></a>
+                    <div class="item-product__price">$20</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/03.jpg" alt="Dog food"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"><h3>Dog food</h3></a>
+                    <div class="item-product__price">$30</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/04.jpg" alt="Treat for dog"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>Treat for dog</h3></a
+                    >
+                    <div class="item-product__price">$60</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img
+                      src="images/products/05.jpg"
+                      alt="scratching toy for cat"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>scratching toy for cat</h3></a
+                    >
+                    <div class="item-product__price">$200</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/06.jpg" alt="Teddy bear for dog"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>Teddy bear for dog</h3></a
+                    >
+                    <div class="item-product__price">$80</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/07.jpg" alt="Treats Knot Bone"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>Treats Knot Bone</h3></a
+                    >
+                    <div class="item-product__price">$8</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+              <article class="products__item item-product">
+                <div class="item-product__image">
+                  <a href="#" class="item-product__image-ibg"
+                    ><img src="images/products/08.jpg" alt="dog bowls"
+                  /></a>
+                  <a href="#" class="item-product__cart button button-gold"
+                    >Add to cart</a
+                  >
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <a href="#" class="item-product__name"
+                      ><h3>dog bowls</h3></a
+                    >
+                    <div class="item-product__price">$70</div>
+                  </div>
+                  <div class="item-product__stars">
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star-fill"></div>
+                    <div class="item-product__star _icon-star"></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <a href="#" class="products__button button button-gold">Explore</a>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__heading">
+            <div class="services__container">
+              <div class="services__image">
+                <img src="images/services/cat.jpg" alt="cat" />
+              </div>
+              <div class="services__content content-services">
+                <p class="content-services__label">our services</p>
+                <h2 class="content-services__title title">
+                  Quality Things for Loving Pets
+                </h2>
+                <blockquote class="content-services__citation">
+                  “More than a Pet Store…”
+                </blockquote>
+                <p class="content-services__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  aliquam mi id augue ultrices, in tempus elit tristique.
+                  Aliquam ultrices sem non.
+                </p>
+                <a href="#" class="content-services__button button">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__items items-services">
+            <div class="items-services__container">
+              <article class="items-services__card items-services__card--small">
+                <a href="#" class="items-services__image-ibg">
+                  <img src="images/services/01.jpg" alt="image" />
+                </a>
+                <div class="items-services__content">
+                  <h3 class="items-services__text">
+                    Taking dogs care to the next level
+                  </h3>
+                  <a href="#" class="items-services__link _icon-arrow"></a>
+                </div>
+              </article>
+              <article class="items-services__card">
+                <a href="#" class="items-services__image-ibg">
+                  <img src="images/services/02.jpg" alt="image" />
+                </a>
+                <div class="items-services__content">
+                  <h3 class="items-services__text">
+                    We value the best health of your pets
+                  </h3>
+                  <a href="#" class="items-services__link _icon-arrow"></a>
+                </div>
+              </article>
+              <article class="items-services__card">
+                <a href="#" class="items-services__image-ibg">
+                  <img src="images/services/03.jpg" alt="image" />
+                </a>
+                <div class="items-services__content">
+                  <h3 class="items-services__text">
+                    Trust us with your pet’s vacation
+                  </h3>
+                  <a href="#" class="items-services__link _icon-arrow"></a>
+                </div>
+              </article>
+              <article
+                class="items-services__card items-services__card--small items-services__card--right"
+              >
+                <a href="#" class="items-services__image-ibg">
+                  <img src="images/services/04.jpg" alt="image" />
+                </a>
+                <div class="items-services__content">
+                  <h3 class="items-services__text">
+                    We treat cats with utmost care
+                  </h3>
+                  <a href="#" class="items-services__link _icon-arrow"></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="page__contacts contacts">
+          <div class="contacts__container">
+            <div class="contacts__images">
+              <div class="contacts__image-top">
+                <img src="images/contacts/cat.jpg" alt="cat" />
+              </div>
+              <a href="#" class="contacts__video-button"
+                ><img src="images/contacts/video-button.png" alt="button"
+              /></a>
+              <div class="contacts__image-bottom">
+                <img src="images/contacts/dog.jpg" alt="dog" />
+              </div>
+            </div>
+            <div class="contacts__content">
+              <p class="contacts__label">Contact us</p>
+              <h2 class="contacts__title title">
+                Come for the care, leave with a smile
+              </h2>
+              <div class="contacts__working-hours _icon-clock">
+                <p>Monday/Friday 9:00-23:00</p>
+                <p>Saturday 10:00-21:00</p>
+              </div>
+              <div class="contacts__data _icon-geolocation">
+                <a href="tel:0123456789" class="contacts__phone u-hover"
+                  >+012-345-6789</a
+                >
+                <a
+                  href="mailto:TheWildKingdom@contact.com"
+                  class="contacts__email u-hover"
+                  >TheWildKingdom@contact.com</a
+                >
+                <p class="contacts__address">
+                  9889 Lorem Ipsum street, Pellentesque, CA, USA
+                </p>
+              </div>
+              <a href="#" class="contacts__button button button-gold"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </section>
+        <div class="page__reviews reviews">
+          <div class="reviews__container">
+            <div class="reviews__slider swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <div class="slide-reviews__body">
+                    <div class="slide-reviews__icon">
+                      <img src="images/reviews/icon.png" alt="icon" />
+                    </div>
+                    <div class="slide-reviews__text">
+                      <span class="_icon-quotes"></span>Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit. Etiam vulputate
+                      pharetra ante id congue. Cras feugiat, diam a placerat
+                      posuere, arcu risus porta elit, sed finibus magna lorem ut
+                      turpis.<span class="_icon-quotes"></span>
+                    </div>
+                    <div class="slide-reviews__subtitle title">
+                      Etiam vulputate
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <div class="slide-reviews__body">
+                    <div class="slide-reviews__icon">
+                      <img src="images/reviews/icon.png" alt="icon" />
+                    </div>
+                    <div class="slide-reviews__text">
+                      <span class="_icon-quotes"></span>Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit. Cras feugiat, diam a
+                      placerat posuere, arcu risus porta elit, sed finibus magna
+                      lorem ut turpis.<span class="_icon-quotes"></span>
+                    </div>
+                    <div class="slide-reviews__subtitle title">
+                      Etiam vulputate
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <div class="slide-reviews__body">
+                    <div class="slide-reviews__icon">
+                      <img src="images/reviews/icon.png" alt="icon" />
+                    </div>
+                    <div class="slide-reviews__text">
+                      <span class="_icon-quotes"></span>Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit. Etiam vulputate
+                      pharetra ante id congue. Cras feugiat, diam a placerat
+                      posuere, arcu risus porta elit, sed finibus magna lorem ut
+                      turpis. Etiam vulputate pharetra ante id congue.
+                      <span class="_icon-quotes"></span>
+                    </div>
+                    <div class="slide-reviews__subtitle title">
+                      Etiam vulputate
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- navigation buttons -->
+              <div
+                class="reviews__arrow-prev swiper-button-prev _icon-arrow"
+              ></div>
+              <div
+                class="reviews__arrow-next swiper-button-next _icon-arrow"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__inner">
+            <div class="footer__content">
+              <a href="#" class="footer__sitemap u-hover">Sitemap</a>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link u-hover">Home </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link u-hover">About</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link u-hover">Products</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#" class="menu-footer__link u-hover">Services</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="footer__social social">
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-twitter"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-imstagram"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-tik-tok"></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link _icon-medium"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__logo">
+              <img src="images/header/logo.svg" alt="logo" />
+            </div>
+            <div class="footer__subscribe subscribe">
+              <h2 class="subscribe__title">
+                Treating all the pets present here like royalty.
+              </h2>
+              <form
+                class="subscribe__form"
+                method="get"
+                enctype="multipart/form-data"
+              >
+                <input
+                  class="subscribe__input"
+                  required
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email address"
+                />
+                <button class="subscribe__button button" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="footer__copy">
+              <p>Copyright Dotcreativemarket</p>
+              <a href="#" class="footer__up _icon-arrow"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
