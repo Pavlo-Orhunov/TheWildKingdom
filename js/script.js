@@ -85,8 +85,9 @@ window.addEventListener("load", function () {
     })
     const mainSlider = new Swiper(".main-slider", {
       loop: true,
+      speed: 1300,
       autoplay: {
-        delay: 5000,
+        delay: 4000,
       },
       // effect: "fade",
       spaceBetween: 10,
@@ -103,10 +104,10 @@ window.addEventListener("load", function () {
   // ------------- reviews SWIPER -------------
   if (document.querySelector(".reviews__slider")) {
     const reviewsSlider = new Swiper(".reviews__slider", {
-      speed: 500,
+      speed: 1200,
       loop: true,
       autoplay: {
-        delay: 5000,
+        delay: 4000,
       },
       // Navigation arrows
       navigation: {
