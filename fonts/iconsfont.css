@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-cross:before {
+  content: "\ea0f";
+}
 ._icon-login:before {
   content: "\e90a";
 }

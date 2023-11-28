@@ -144,9 +144,6 @@ h6 {
   line-height: 1.56;
   cursor: pointer;
   white-space: nowrap;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    -webkit-transform 0.3s ease;
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease,
     -webkit-transform 0.3s ease;
 }
@@ -167,6 +164,7 @@ h6 {
     color: var(--color-header-text, #c1ab81);
   }
 }
+
 .button:active {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
@@ -194,6 +192,75 @@ h6 {
   .u-hover:hover::after,
   .u-hover:active::after {
     width: 100%;
+  }
+}
+/* ----------------  animation heartbeat ----------------  */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -324,7 +391,6 @@ h6 {
 }
 
 @media (max-width: 767.98px) {
-  /* Hamburger menu button (is displayed on resolutions less than 768px) */
   .icon-menu {
     position: relative;
     z-index: 5;
@@ -552,8 +618,6 @@ h6 {
 }
 .social__item {
   font-size: 24px;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .social__link {
@@ -700,8 +764,6 @@ h6 {
   top: -100%;
   right: -100px;
   font-size: 73px;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .footer__up::before {
@@ -859,10 +921,6 @@ body {
   background: url("../images/hero/hero-bg.jpg") center / cover no-repeat,
     #201b12;
 }
-.page__hero {
-}
-.hero {
-}
 .hero__container {
   max-width: calc(1602px + 58 * 2px);
 }
@@ -941,8 +999,6 @@ body {
   transform: rotate(-90deg);
   font-size: 34px;
   color: var(--color-header-text, #c1ab81);
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .hero__arrow-next {
@@ -950,8 +1006,6 @@ body {
   transform: rotate(90deg);
   font-size: 54px;
   color: var(--color-header-text, #c1ab81);
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1261,9 +1315,6 @@ body {
   z-index: 3;
   opacity: 0;
   pointer-events: none;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    -webkit-transform 0.3s ease;
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease,
     -webkit-transform 0.3s ease;
 }
@@ -1478,14 +1529,19 @@ body {
   aspect-ratio: 592/593;
 }
 .items-services__image-ibg img {
-  transition: -webkit-filter 0.3s ease;
-  transition: filter 0.3s ease;
-  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+  transition: transform 0.7s, filter 0.7s ease-in-out, -webkit-transform 0.7s,
+    -webkit-filter 0.7s ease-in-out;
 }
 @media (any-hover: hover) {
   .items-services__image-ibg:hover img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+  }
+  .items-services__image-ibg:not(:hover) img {
+    transition: transform 0.25s, filter 0.25s ease-in-out,
+      -webkit-transform 0.25s, -webkit-filter 0.25s ease-in-out;
   }
 }
 
@@ -1506,8 +1562,6 @@ body {
   font-size: 53px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1651,16 +1705,106 @@ body {
   position: relative;
   z-index: 4;
   margin-top: -150px;
-  transition: -webkit-filter 0.3s ease;
-  transition: filter 0.3s ease;
-  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 @media (any-hover: hover) {
   .contacts__video-button:hover img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 }
+
+/* ------------------------- */
+.popup {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  -webkit-transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  width: 60vw;
+  padding: 15px;
+  position: relative;
+  opacity: 0;
+  background-color: var(--color-accent-text, #9d875c);
+  border-radius: 8px;
+  box-shadow: 4px 6px 32px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+@media (max-width: 800px) {
+  .popup__content {
+    width: 100vw;
+  }
+}
+@media (min-width: 2048px) {
+  .popup__content {
+    width: 50vw;
+  }
+}
+.popup__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.popup__title {
+  margin-bottom: 15px;
+  padding-right: 30px;
+  color: #000;
+}
+
+.popup__video {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.popup__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------- */
+
 .contacts__image-bottom {
   position: relative;
   z-index: 3;
@@ -1908,8 +2052,6 @@ body {
   transform: rotate(-90deg);
   position: relative;
   left: 20px;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .reviews__arrow-next::before {
@@ -1919,8 +2061,6 @@ body {
   transform: rotate(90deg);
   position: relative;
   right: 20px;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media (any-hover: hover) {
