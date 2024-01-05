@@ -25,6 +25,24 @@ _(will open in the same window)_
 
 <br>
 
-**_Preview for mobile (360px) layout version:_** ⬇️
+**_Preview for laptop (1440px) layout version:_** ⬇️
 
-![Mobile version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/mobile.jpg "Mobile version preview")
+![Laptop version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/laptop.jpg "Laptop version preview")
+
+<br>
+
+**_Preview for mobile-portrait (360px) layout version:_** ⬇️
+
+![Mobile version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/mobile-p.jpg "Mobile-portrait version preview")
+
+<br>
+
+**_Preview for mobile-landscape layout version:_** ⬇️
+
+![Mobile version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/mobile-l.jpg "Mobile-landscape version preview")
+
+<br>
+
+**_Preview for tablet (810px) layout version:_** ⬇️
+
+![Tablet version preview](https://github.com/Pavlo-Orhunov/TheWildKingdom/blob/master/images/tablet.jpg "Tablet version preview")
